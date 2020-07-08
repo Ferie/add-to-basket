@@ -1,35 +1,28 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
-  }));
+    let component: AppComponent;
+    let fixture: ComponentFixture<AppComponent>;
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [AppComponent],
+            imports: [RouterTestingModule]
+        }).compileComponents();
+    }));
 
-  it(`should have as title 'innovation-group'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('innovation-group');
-  });
+    beforeEach(() => {
+        // Create component and test fixture
+        fixture = TestBed.createComponent(AppComponent);
+        // Instatiate test component from the fixture
+        component = fixture.componentInstance;
+        // Detect the changes in the component
+        fixture.detectChanges();
+    });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('innovation-group app is running!');
-  });
+    it('should create the app', () => {
+        expect(component).toBeTruthy();
+    });
 });
