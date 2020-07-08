@@ -1,0 +1,17 @@
+@import '~src/styles.scss';
+
+.back-to-results {
+    @include user-select;
+    cursor: pointer;
+    margin: 1rem 0;
+
+    &:before {
+        display: inline-block;
+        background-image: url('/assets/images/icons/icon-left-arrow.png');
+        background-position: center;
+        background-size: 12px;
+        content: " ";
+        height: 12px;
+        width: 12px;
+    }
+}
