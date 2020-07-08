@@ -1,0 +1,32 @@
+<article class="product-card">
+    <div
+        class="product-card__product--details"
+        (click)="goToDetails(product.url)"
+    >
+        <section
+            class="product-card__product--image"
+            [ngStyle]="{ 'background-image': 'url(' + product.image + ')' }"
+        ></section>
+
+        <section class="product-card__product--content">
+            <h2 class="product-card__product--name">
+                {{ product.name }}
+            </h2>
+
+            <div class="product-card__product--excerpt">
+                {{ product.excerpt }}
+            </div>
+
+            <div class="product-card__product--price">
+                £{{ product.price }}
+            </div>
+        </section>
+    </div>
+
+    <div class="product-card__add-to-cart--container">
+        <div
+            class="product-card__add-to-cart"
+            (click)="addToCart(product.price)"
+        ></div>
+    </div>
+</article>
