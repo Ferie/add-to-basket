@@ -1,0 +1,24 @@
+<section class="filters">
+    Sort by:
+    <span
+        class="filters__sorting"
+        [ngClass]="{ 'selected': orderBy === 'name' }"
+        (click)="orderBy = 'name'"
+    >
+        A-Z
+    </span>
+
+    <span
+        class="filters__price"
+        [ngClass]="{ 'selected': orderBy === 'price' }"
+        (click)="orderBy = 'price'"
+    >
+        Price
+    </span>
+</section>
+
+<section class="grid">
+    <ng-container *ngFor="let product of products | orderBy: orderBy">
+        <ra-product-card [product]="product"></ra-product-card>
+    </ng-container>
+</section>

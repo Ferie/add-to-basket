@@ -1,0 +1,24 @@
+@import '~src/styles.scss';
+
+.grid {
+    @include display-grid;
+    @include grid-template-columns(repeat(auto-fit, minmax(250px, 1fr)));
+    grid-gap: 12px;
+}
+
+.filters {
+    font-size: 12px;
+    font-weight: $bold;
+    margin: 16px 0;
+    text-align: right;
+
+    &__sorting,
+    &__price {
+        cursor: pointer;
+        padding-left: 16px;
+
+        &.selected {
+            color: $blue-violet;
+        }
+    }
+}
