@@ -1,0 +1,9 @@
+{
+    "id": 2,
+    "name": "Apple",
+    "image": "assets/images/apple.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eros nibh. Curabitur rhoncus nulla condimentum, accumsan erat at, semper ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur commodo quam a pharetra auctor. Sed egestas metus vitae vulputate vestibulum. Proin accumsan odio lobortis, pellentesque tellus a, auctor metus. Nunc viverra dui eleifend ligula laoreet sollicitudin. Sed quis luctus mauris. Suspendisse finibus lorem eu nisi egestas, id fermentum ex interdum.",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 0.75,
+    "url": "apple"
+}
