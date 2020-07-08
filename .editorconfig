@@ -1,16 +1,31 @@
-# Editor configuration, see https://editorconfig.org
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
 root = true
 
+# Unix-style newlines
+# 4 space indentation
+# Tab indentation
+# New line at the end of the file
 [*]
-charset = utf-8
+end_of_line = lf
+indent_size = 4
 indent_style = space
-indent_size = 2
 insert_final_newline = true
-trim_trailing_whitespace = true
 
-[*.ts]
+# Set default charset
+[*.{js,py,css,scss,html}]
+charset = utf-8
+
+# Matches the exact file `index.html`
+[index.html]
+insert_final_newline = false
+
+# Matches the style files
+[*.{css,scss}]
+insert_final_newline = false
+
+# TS files with single quote
+[*.{ts,js}]
 quote_type = single
-
-[*.md]
-max_line_length = off
-trim_trailing_whitespace = false
+insert_final_newline = true
