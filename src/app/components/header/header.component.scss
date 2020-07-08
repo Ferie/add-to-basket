@@ -1,0 +1,17 @@
+@import '~src/styles.scss';
+
+.header {
+    position: relative;
+    padding: 16px 0;
+    font-size: 32px;
+
+    &__title {
+        font-weight: $bold;
+    }
+
+    &__basket {
+        position: absolute;
+        top: 16px;
+        right: 0;
+    }
+}
