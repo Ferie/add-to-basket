@@ -1,0 +1,34 @@
+<article class="product-details">
+    <section class="product-details__left-column">
+        <figure class="product-details__product--image__container">
+            <img
+                src="{{ product.image }}"
+                alt="{{ product.name }}"
+                class="product-details__product--image"
+            >
+        </figure>
+    </section>
+
+    <section class="product-details__right-column">
+        <div class="product-details__content">
+            <h2 class="product-details__product--name">
+                {{ product.name }}
+            </h2>
+
+            <div class="product-details__product--price">
+                £{{ product.price }}
+            </div>
+
+            <div
+                class="product-details__add-to-cart"
+                (click)="addToBasket(product.price)"
+            >
+                Buy now
+            </div>
+
+            <div class="product-details__product--description">
+                {{ product.description }}
+            </div>
+        </div>
+    </section>
+</article>

@@ -1,0 +1,54 @@
+@import '~src/styles.scss';
+
+.product-details {
+    @include flexbox;
+
+    &__left-column {
+        width: 40%;
+    }
+
+    &__right-column {
+        width: 60%;
+    }
+
+    &__content {
+        padding-left: 16px;
+    }
+
+    &__product {
+        &--image {
+            width: 100%;
+
+            &__container {
+                width: 100%;
+            }
+        }
+
+        &--name {
+            font-size: 28px;
+            font-weight: $bold;
+        }
+
+        &--price {
+            font-size: 24px;
+            font-weight: $bold;
+            color: $blue-violet;
+        }
+
+        &--description {
+            width: 100%;
+        }
+    }
+
+    &__add-to-cart {
+        @include user-select;
+        @include svg-icons('shopping-basket');
+        background-size: 28px;
+        cursor: pointer;
+        font-size: 28px;
+        font-weight: $bold;
+        color: $blue-violet;
+        margin: 8px 0;
+        padding-left: 40px;
+    }
+}
