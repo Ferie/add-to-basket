@@ -20,8 +20,8 @@ Instructions:
 
 - Create unit tests to test that the basket total is updated correctly
 
-![alt text](src/assets/images/designs/home page.png "Home page")
-![alt text](src/assets/images/designs/product page.png "Product page")
+![alt text](https://github.com/Ferie/add-to-basket/blob/master/src/assets/images/designs/home%20page.png "Home page")
+![alt text](https://github.com/Ferie/add-to-basket/blob/master/src/assets/images/designs/product%20page.png "Product page")
 
 ---
 
