@@ -26,9 +26,10 @@
                 Buy now
             </div>
 
-            <div class="product-details__product--description">
-                {{ product.description }}
-            </div>
+            <div
+                class="product-details__product--description"
+                [innerHTML]="product.description"
+            ></div>
         </div>
     </section>
 </article>
