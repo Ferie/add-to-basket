@@ -1,6 +1,7 @@
 {
     "name": "riccardo-andreatta",
-    "version": "0.0.0",
+    "version": "0.1.0",
+    "author": "Riccardo Andreatta",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
