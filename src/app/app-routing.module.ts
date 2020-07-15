@@ -17,6 +17,10 @@ const routes: Routes = [
         component: DetailsPageComponent,
         data: {},
         resolve: {}
+    },
+    {
+        path: '**',
+        redirectTo: '/'
     }
 ];
 
