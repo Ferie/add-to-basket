@@ -1,6 +1,6 @@
 {
-    "name": "riccardo-andreatta",
-    "version": "0.1.0",
+    "name": "add-to-basket",
+    "version": "0.1.1",
     "author": "Riccardo Andreatta",
     "scripts": {
         "ng": "ng",
