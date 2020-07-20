@@ -1,6 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/07532237-58de-4dc6-b63d-9564d6a25ebc/deploy-status)](https://app.netlify.com/sites/add-to-basket/deploys)
+
 # Add to Basket
 
 Another interview exercise.
+
+[Deployed and working project](https://add-to-basket.netlify.app/)
 
 Instructions:
 
