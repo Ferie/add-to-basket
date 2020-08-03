@@ -1,7 +1,7 @@
 // Vendors
 @import "./assets/sass/vendor/reset";
 @import "./assets/sass/vendor/animate.3.5.2";
-@import "./assets/sass/vendor/bootstrap/import-bootstrap";
+@import "./assets/sass/vendor/bootstrap-grid";
 
 // Modules
 @import "./assets/sass/modules/mixins";
@@ -13,8 +13,3 @@
 // Page setting
 @import "./assets/sass/base/body-settings";
 @import "./assets/sass/base/generals";
-
-// Components
-// @import "./assets/sass/components/inputs";
-@import "./assets/sass/components/buttons";
-@import "./assets/sass/components/links";
