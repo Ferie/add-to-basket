@@ -1,6 +1,6 @@
 {
     "name": "add-to-basket",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "author": "Riccardo Andreatta",
     "scripts": {
         "ng": "ng",
@@ -10,7 +10,6 @@
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
-    "private": true,
     "dependencies": {
         "@angular/animations": "~9.1.9",
         "@angular/common": "~9.1.9",
